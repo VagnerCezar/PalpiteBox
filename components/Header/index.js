@@ -1,0 +1,30 @@
+import React from 'react'
+import styles from './styles.module.css'
+import Link from 'next/link'
+
+const Header = () => {
+  return (
+    // Conf da barra cinza e logo
+    <React.Fragment>
+      <div className={styles.wrapper} >
+        <div className='container mx-auto'>
+          <Link href='/'>
+            <a> <img className='mx-auto' src='/logo_palpitebox.png' alt='Palpitebox' /></a>
+          </Link>
+        </div>
+      </div>
+      <div className='bg-gray-300 p-4 shadow-md text-center'>
+        <Link href='/sobre'>
+          <a className='bg-blue-500 px-2 hover:underline'>Sobre</a>
+        </Link>
+        <Link href='/contato'>
+          <a className='bg-blue-300 px-2 hover:underline'>Contato</a>
+        </Link>
+        <Link href='/pesquisa'>
+          <a className='bg-blue-200 px-2 hover:underline'>pesquisa</a>
+        </Link>
+      </div>
+    </React.Fragment>
+  )
+}
+export default Header
