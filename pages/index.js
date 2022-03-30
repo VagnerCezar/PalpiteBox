@@ -2,10 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import useSWR from 'swr'
 
-const fatcher = (...args) => fetch(...args).then(res => res.json())
+const fetcher = (...args) => fetch(...args).then(res => res.json())
 
 const Index = () => {
-  const { data, error } = useSWR('/api/get-promo',)
+  const { data, error } = useSWR('/api/get-promo', fetcher)
   return (
     <div>
       <p className='mt-12 text-center font-bold'>
@@ -17,10 +17,12 @@ const Index = () => {
           <a className='bg-blue-400 px-6 py-4 font-bold shadow-lg '>Dar opinião ou sugestão </a>
         </Link>
       </div>
-      <p className='my-12 text-center font-bold '>
-        Ao dar sua opinião e/ou sugestão,<br />
-        ganhe 10% na sua próxima compra.
-      </p>
+      <div>
+        <p className='text-center font-bold '>
+          Ao dar sua opinião e/ou sugestão,<br />
+          ganhe 10% na sua próxima compra.
+        </p>
+      </div>
     </div>
   )
 }
