@@ -1,10 +1,8 @@
-# TulioFaria.dev (resume)
+# Meu Primeiro Projeto no GIT.dev (resume)
 
-[![HitCount](https://hits.dwyl.com/tuliofaria/tuliofaria/tuliofariadev.svg)](https://hits.dwyl.com/tuliofaria/tuliofaria/tuliofariadev)
+[![HitCount](https://hits.dwyl.com/VagnerCezar/meu-projeto-git.svg)](https://hits.dwyl.com/VagnerCezar/meu-projeto-git)
 
-Este projeto é o código-fonte do curriculo online de Tulio Faria, disponível em: https://tuliofaria.dev
-
-![Preview](https://github.com/tuliofaria/tuliofaria.dev/blob/master/print.png?raw=true)
+Adicionando algumas linhas....
 
 ## Início
 
@@ -46,4 +44,4 @@ Este projeto é licenciado sobre a licença MIT - veja [LICENSE.md](LICENSE.md) 
 
 ## Acknowledgments
 
-* Este projeto foi construído durante as aulas do Fullstack Master do [DevPleno](https://devpleno.com).
+* Agradecimentos...Este projeto foi construído durante as aulas do Fullstack Master do [DevPleno](https://devpleno.com).
