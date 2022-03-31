@@ -2,7 +2,7 @@
 
 [![HitCount](https://hits.dwyl.com/VagnerCezar/meu-projeto-git.svg)](https://hits.dwyl.com/VagnerCezar/meu-projeto-git)
 
-Adicionando algumas linhas....
+Adicionando algumas linhas...
 
 ## Início
 
