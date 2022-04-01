@@ -21,10 +21,8 @@ const Index = () => {
       </div>
       {!data && <p>Carregando...</p>}
       {!error && data && data.showCoupon &&
-        <p className='text-center font-bold '>
+        <p className='my-12 text-center'>
           {data.message}
-          Ao dar sua opinião e/ou sugestão,<br />
-          ganhe 10% na sua próxima compra.
         </p>
       }
     </div>
