@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import useSWR from 'swr'
+import PageTitle from '../components/PageTitle'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -23,10 +24,9 @@ const Index = () => {
       {!error && data && data.showCoupon &&
         <p className='text-center font-bold '>
           {data.message}
-          Ao dar sua opinião e/ou sugestão,<br />
-          ganhe 10% na sua próxima compra.
         </p>
       }
+      <PageTitle title='Seja Bem vindo' />
     </div>
   )
 }
