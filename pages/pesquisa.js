@@ -22,9 +22,7 @@ const Pesquisa = () => {
       const data = await response.json()
       setSucess(true)
       setRetorno(data)
-
     } catch (err) {
-
     }
   }
   const onChange = evt => {
@@ -46,7 +44,7 @@ const Pesquisa = () => {
       </p>
       {!sucess && <div className='w-1/5 mx-auto '>
         <label className='font-bold'>Seu nome:</label>
-        <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Nome' onChange={onChange} value={form.Name} />
+        <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
         <label className='font-bold'>E-mail:</label>
         <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
         <label className='font-bold'>Whatsapp:</label>
