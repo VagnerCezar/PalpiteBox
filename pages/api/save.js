@@ -3,7 +3,7 @@ import moment from 'moment'
 
 
 
-const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
+const doc = new GoogleSpreadsheet('1Mma0FovnWfL2OpY36E57Pre_SGgAyPw0Fc2twN-sN1Y')
 
 const genCupom = () => {
   const code = parseInt(moment().format('YYMMDDHHmmssSSS')).toString(16).toUpperCase()
