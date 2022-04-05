@@ -2,6 +2,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet'
 import moment from 'moment'
 
 
+
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
 const genCupom = () => {
