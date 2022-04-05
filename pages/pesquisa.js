@@ -6,7 +6,8 @@ const Pesquisa = () => {
     Nome: '',
     Email: '',
     Whatsapp: '',
-    Nota: ''
+    Nota: '',
+    Sugestao: ''
   })
   const notas = [0, 1, 2, 3, 4, 5]
   const [sucess, setSucess] = useState(false)
@@ -49,6 +50,8 @@ const Pesquisa = () => {
         <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
         <label className='font-bold'>Whatsapp:</label>
         <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
+        <label className='font-bold'>Sugestao:</label>
+        <input type='text' className='p-4 block shadow bg-blue-200 my-2 rounded' placeholder='Sugestao' onChange={onChange} name='Sugestao' value={form.Sugestao} />
         <label className='font-bold'>Nota:</label>
         <div className=' flex py-5 '>
           {notas.map(nota => {
@@ -63,6 +66,9 @@ const Pesquisa = () => {
         </div>
 
         <button className='bg-blue-400 px-6 py-4 font-bold rounded shadow-lg hover:underline' onClick={save}>Salvar</button>
+        <pre>
+          {JSON.stringify(form, null, 2)}
+        </pre>
       </div>}
       {
         sucess && <div className='w-1/5 mx-auto '>
