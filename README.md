@@ -1,10 +1,10 @@
-# Meu Primeiro Projeto no GIT.dev (resume)
+# Meu Segundo Projeto no GIT.dev (resume)
 
 [![HitCount](https://hits.dwyl.com/VagnerCezar/meu-projeto-git.svg)](https://hits.dwyl.com/VagnerCezar/meu-projeto-git)
 
 Adicionando algumas linhas...
 
-## Início
+## Objetivo
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
