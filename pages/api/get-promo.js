@@ -17,24 +17,21 @@ export default async (req, res) => {
 
 =======
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
-/*
-const fromBase64 = value => {
-  const buff = new Buffer.from(value, 'base64');
-  return buff.toString('ascii');
-}
-*/
+
 
 export default async (req, res) => {
-
   try {
     await doc.useServiceAccountAuth({
       client_email: process.env.SHEET_CLIENT_EMAIL,
-      private_key: fromBase64(process.env.SHEET_PRIVATE_KEY)
+      private_key: process.env.SHEET_PRIVATE_KEY
     })
     await doc.loadInfo()
 
+<<<<<<< HEAD
     //acessar planilha
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
     const sheet = doc.sheetsByIndex[2]
     await sheet.loadCells('A2:B2')
 
@@ -42,9 +39,12 @@ export default async (req, res) => {
     const textoCell = sheet.getCell(1, 1)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
     res.end(JSON.stringify({
       showCoupon: mostrarPromocaoCell.value === 'VERDADEIRO',
       message: textoCell.value
@@ -57,9 +57,15 @@ export default async (req, res) => {
     }))
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+
+
+
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 }
