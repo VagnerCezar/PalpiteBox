@@ -3,6 +3,7 @@ import moment from 'moment'
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
@@ -10,6 +11,9 @@ const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 const genCupon = () => {
 =======
 const doc = new GoogleSpreadsheet('1Mma0FovnWfL2OpY36E57Pre_SGgAyPw0Fc2twN-sN1Y')
+=======
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
@@ -29,6 +33,7 @@ export default async (req, res) => {
     await doc.loadInfo()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     const sheet = doc.sheetsByIndex[1]
     const data = JSON.parse(req.body)
 
@@ -40,6 +45,8 @@ export default async (req, res) => {
     // planilha 1
 =======
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
     const sheet = doc.sheetsByIndex[1]
     const data = JSON.parse(req.body)
 
@@ -47,7 +54,11 @@ export default async (req, res) => {
     await sheetConfig.loadCells('A2:B2')
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
@@ -58,6 +69,7 @@ export default async (req, res) => {
     let Promo = ''
 <<<<<<< HEAD
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
+<<<<<<< HEAD
       Cupom = genCupon()
       Promo = textoCell.value
     }
@@ -65,13 +77,19 @@ export default async (req, res) => {
 =======
 
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
       Cupom = genCupom()
       Promo = textoCell.value
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+    // Nome	Email	Whatsapp	Cupom	Promo
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
     // Nome	Email	Whatsapp	Cupom	Promo
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
@@ -81,9 +99,12 @@ export default async (req, res) => {
       Whatsapp: data.Whatsapp,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
       Sugestao: data.Sugestao,
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
       Nota: parseInt(data.Nota),

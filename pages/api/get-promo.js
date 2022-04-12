@@ -4,6 +4,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet'
 <<<<<<< HEAD
 
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
+<<<<<<< HEAD
 
 
 
@@ -18,6 +19,9 @@ export default async (req, res) => {
 =======
 const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
+=======
+
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 
 export default async (req, res) => {
   try {
@@ -28,8 +32,11 @@ export default async (req, res) => {
     await doc.loadInfo()
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     //acessar planilha
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
     const sheet = doc.sheetsByIndex[2]
@@ -40,9 +47,12 @@ export default async (req, res) => {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 >>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
     res.end(JSON.stringify({
@@ -58,11 +68,17 @@ export default async (req, res) => {
   }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 
 
 =======
 >>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
+=======
+
+
+
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 =======
 
 
