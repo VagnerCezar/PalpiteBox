@@ -2,7 +2,10 @@ import React from 'react'
 import Link from 'next/link'
 import PageTitle from '../components/PageTitle'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
 
 const Contato = () => {
   return (

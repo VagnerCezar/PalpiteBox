@@ -30,9 +30,13 @@ const Index = () => {
           {data.message}
         </p>
       }
+<<<<<<< HEAD
 
 
       <h1 className='text-white text-center font-bold p-4 block shadow bg-gray-900 my-2 rounded'>Texto</h1>
+=======
+      <PageTitle title='Seja Bem vindo' />
+>>>>>>> bc9f86553998ba10138f0a791998f50ccaee773a
     </div>
   )
 }
