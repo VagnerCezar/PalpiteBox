@@ -1,28 +1,34 @@
 {
-  "name": "palpite-box",
+  "name": "barbearia-projeto",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "[![HitCount](https://hits.dwyl.com/VagnerCezar/meu-projeto-git.svg)](https://hits.dwyl.com/VagnerCezar/meu-projeto-git)",
+  "main": "postcss.config.js",
   "dependencies": {
     "autoprefixer": "^9.8.6",
     "axios": "^0.26.0",
     "google-spreadsheet": "^3.2.0",
     "moment": "^2.29.2",
-    "next": "^12.1.0",
+    "next": "^12.1.4",
     "postcss-import": "^14.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
-    "swr": "^0.2.3"
-  },
-  "devDependencies": {
+    "swr": "^0.2.3",
     "tailwindcss": "^1.9.0"
   },
+  "devDependencies": {},
   "scripts": {
     "dev": "next",
     "start": "next start",
     "build": "next build"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VagnerCezar/palpite-box.git"
+  },
   "author": "Vagner Cezar",
-  "license": "MIT"
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VagnerCezar/palpite-box/issues"
+  },
+  "homepage": "https://github.com/VagnerCezar/palpite-box#readme"
 }
