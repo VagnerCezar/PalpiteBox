@@ -2,8 +2,7 @@ import { GoogleSpreadsheet } from 'google-spreadsheet'
 import moment from 'moment'
 
 
-
-const doc = new GoogleSpreadsheet('1Mma0FovnWfL2OpY36E57Pre_SGgAyPw0Fc2twN-sN1Y')
+const doc = new GoogleSpreadsheet(process.env.SHEET_DOC_ID)
 
 const genCupom = () => {
   const code = parseInt(moment().format('YYMMDDHHmmssSSS')).toString(16).toUpperCase()
@@ -17,12 +16,12 @@ export default async (req, res) => {
       private_key: process.env.SHEET_PRIVATE_KEY
     })
     await doc.loadInfo()
-    // planilha 1
     const sheet = doc.sheetsByIndex[1]
     const data = JSON.parse(req.body)
-    // planilha 2
+
     const sheetConfig = doc.sheetsByIndex[2]
     await sheetConfig.loadCells('A2:B2')
+
 
     const mostrarPromocaoCell = sheetConfig.getCell(1, 0)
     const textoCell = sheetConfig.getCell(1, 1)
@@ -31,17 +30,15 @@ export default async (req, res) => {
     let Promo = ''
 
     if (mostrarPromocaoCell.value === 'VERDADEIRO') {
-
       Cupom = genCupom()
       Promo = textoCell.value
     }
 
-
+    // Nome	Email	Whatsapp	Cupom	Promo
     await sheet.addRow({
       Nome: data.Nome,
       Email: data.Email,
       Whatsapp: data.Whatsapp,
-      Sugestao: data.Sugestao,
       Nota: parseInt(data.Nota),
       'Data Preenchimento': moment().format('DD/MM/YYYY HH:mm:ss'),
       Cupom,
