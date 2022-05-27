@@ -1,4 +1,12 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+# Meu Segundo Projeto no GIT.dev (resume)
+=======
 # Meu Primeiro Projeto no GIT.dev (resume)
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
+=======
+# Meu Primeiro Projeto no GIT.dev (resume)
+>>>>>>> 8d77b04c0168fe69bb0eeac14a4fbe5bead8c04d
 
 [![HitCount](https://hits.dwyl.com/VagnerCezar/meu-projeto-git.svg)](https://hits.dwyl.com/VagnerCezar/meu-projeto-git)
 
